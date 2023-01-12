@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>
+                    <h1>Job Application Form</h1>
+                </legend>
+
+                <fieldset>
+                    <legend><strong>Personal Information</strong></legend>
+
+                    <label for="fname">First Name*:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter  First Name" required><br><br>
+
+                    <label for="mname">Midle Name*:</label>
+                    <input type="text" id="mname" name="mname" placeholder="Enter  Middele Name" required><br><br>
+
+                    <label for="lname">Last Name*:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter  Last Name" required><br><br>
+
+                    <label for="email">Email Id*:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter  Email Id" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" id="phone" placeholder="Enter  Phone number"><br><br>
+
+                    <label for="address">Address</label>
+                    <textarea id="address" rows="4" cols="50" name="address" placeholder="Address"></textarea>
+                </fieldset><br>
+                <fieldset>
+                    <legend> <strong>Professional Information</strong></legend>
+                    <p><strong> Employment Status?</strong></p>
+
+                    <input type="radio" id="employed" name="radio">
+                    <label for="employed">Employed</label>
+
+                    <input type="radio" id="unemployed" name="radio">
+                    <label for="unemployed">Unemployed</label>
+
+                    <input type="radio" id="self-employed" name="radio">
+                    <label for="self-employed">Self-Employed</label>
+
+                    <input type="radio" id="student" name="radio">
+                    <label for="student">Student</label><br><br>
+
+                    <label for="sdate">Expected commencement date:</label>
+                    <input type="date" id="sdate" name="radio"><br><br>
+
+
+                    <label for="state">Select preferred state :</label>
+                    <select name="state" id="state">
+                        <option value="gujarat">Gujarat</option>
+                        <option value="daman">Daman</option>
+                        <option value="maharashtra">maharashtra</option>
+                        <option value="banglore">Banglore</option>
+                    </select>
+
+
+                    <h5>Drop your resume here:</h5>
+                    <label for="myresume">Select files:</label>
+                    <input type="file" id="myresume" name="myresume"><br><br>
+                </fieldset><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+
+</html>
