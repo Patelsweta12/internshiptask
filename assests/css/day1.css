@@ -203,7 +203,7 @@ html {
     height: 60px;
     border-radius: 100%;
     padding: 15px;
-    background-color: var(--white);
+   
     border: #4D5E80;
     border: 2px solid #F5F6F7;   
     margin-top: 30px;
@@ -234,7 +234,7 @@ padding-top: 15px;
     height: 60px;
     border-radius: 100%;
     padding: 15px;
-    background-color: var(--white);
+     
     border: #4D5E80;
     border: 2px solid #F5F6F7;   
     padding-top: 20px;
@@ -245,7 +245,7 @@ padding-top: 15px;
     font-weight: 700;
 font-size: 12px;
 color: #4D5E80;
-padding-top: 15px;
+padding-left: 30px;
    }
 
    .box3 {
@@ -274,5 +274,5 @@ padding-top: 15px;
     font-weight: 700;
 font-size: 12px;
 color: #4D5E80;;
-padding-top: 15px;
+padding-left: 30px;
    }
