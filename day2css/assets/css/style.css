@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E0E0E0;
+}
+
+:root {
+    --left-text-color-gray: #7D8FB3;
+    --white: #FFFFFF;
+    --font-family: sans-serif;
+}
+
+.navigate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.title {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.left-line-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-menu {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--font-family);
+    color: var(--left-text-color-gray);
+    padding-left: 34px;
+}
+
+.list {
+    font-weight: 700;
+    font-size: 13px;
+    font-family: var(--font-family);
+    color: var(--left-text-color-gray);
+    list-style-type: none;
+}
+
+.linkclass {
+    gap: 30px;
+    margin-top: 30px;
+    display: flex;
+    margin-left: 48px;
+    cursor: pointer;
+}
+
+.right-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    margin-top: 38px;
+
+}
+
+.right-name {
+    font-weight: 700;
+    font-size: 13px;
+    font-family: var(--font-family);
+    color: #6B7A99;
+    margin-top: 36px;
+    margin-left: 20px;
+}
+
+.right-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.cross-icon {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-left: 10px;
+}
+
+.dot {
+    position: absolute;
+    bottom: 24px;
+    left: 30px;
+}
+
+header {
+    border-bottom: 1px solid white;
+}
+
+nav {
+    padding: 20px;
+}
