@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- wrapper class starts -->
+    <div class="wrapper d-flex">
+        <input class="aside-wrapper" type="checkbox" id="toggle">
+        <!-- side panel starts -->
+        <aside class="aside d-flex f-dir-c">
+            <div class="frame1">
+                <div class="logoAndFrame d-flex">
+                    <div class="complete-logo">
+                        <img class="poly" src="assets/img/Polygon.svg" alt="polygon">
+                        <img class="poly1" src="assets/img/k-up-in-icon.svg" alt="kpart-1">
+                        <img class="poly2" src="assets/img/k-down-in-icon.svg" alt="kpart-2">
+                    </div>
+                    <img class="title1" src="assets/img/KANBAN.svg" alt="KANBAN">
+                </div>
+                <div class="asidetext asideDataText d-flex">
+                    <!-- list tag starts  -->
+                    <ul type="none">
+                        <li class="space"> <img src="assets/img/dashboard-home.svg" alt="home-icon"> <a class="line"
+                                href="#">Dashboard</a> </li>
+                        <li class="space"><img src="assets/img/inventory-icon.svg" alt="trolly-icon"> <a class="line"
+                                href="#">Inventory</a></li>
+                        <li class="space"> <img src="assets/img/report-icon.svg" alt="graph"><a class="line"
+                                href="#">Reports</a></li>
+                        <li class="space"> <img src="assets/img/suppliers-icon.svg" alt="user-icon"><a class="line"
+                                href="#">Suppliers</a></li>
+                        <li class="space"> <img src="assets/img/order-icon.svg" alt="box-icon"><a class="line"
+                                href="#">Orders</a>
+                        </li>
+                        <li class="space"> <img src="assets/img/managestore-square-icon.svg" alt="rectangle-icon"><a
+                                class="line" href="#">Manage Store</a></li>
+                    </ul>
+                    <!-- list tag ends  -->
+                </div>
+            </div>
+            <div class="frame-2">
+                <!-- list tag starts  -->
+                <ul type="none" class="asidetext2 asideDataText">
+
+                    <li> <img src="assets/img/setting-icon.svg" alt="setting"><a class="line" href="#">Settings</a></li>
+                    <li class="title"> <img src="assets/img/logout-icon.svg" alt="logout-icon"><a class="line "
+                            href="#">Log Out</a>
+                    </li>
+                </ul>
+                <!-- list tag ends  -->
+            </div>
+        </aside>
+        <!-- side panel starts -->
+        <!-- header starts -->
+
+        <div class="container">
+
+            <div class="header d-flex overflow-hidden">
+                <div class="search h-margin">
+                    <label for="toggle">
+                        <img class="s1" src="assets/img/three-line-icon.png" alt="threeline-icon">
+                    </label>
+
+                    <input class="m-icon" type="text" placeholder="Search product,supplier,order">
+                </div>
+                <div class="account">
+                    <img class="bell" src="assets/img/bell-icon.svg" alt="bell">
+                    <img class="radius" src="assets/img/accountimg-icon.svg" alt="girlpic-icon">
+                </div>
+            </div>
+
+            <div class="except-header overflow-hidden">
+                <!-- box starts -->
+                <div class="box margin-lr">
+                    <h3 class="size">Overall Inventory</h3>
+                    <div class="box-data d-flex">
+                        <div class="column1 d-flex f-dir-c">
+                            <h4 class="c-color">Categories</h4>
+                            <span class="margintop">14</span>
+                            <span class="margintop">last 7 days</span>
+                        </div>
+                        <img src="assets/img/Line 10.svg" alt="v-line">
+                        <div class="column2 ">
+                            <h4 class="t-color">Total Products</h4>
+                            <div class="margintop d-flex j-content">
+                                <span>868</span>
+                                <span>2500</span>
+                            </div>
+                            <div class="margintop">
+                                <span>Last 7 days</span>
+                                <span class="mrg-left-47">Revenue</span>
+                            </div>
+                        </div>
+                        <img src="assets/img/Line 10.svg" alt="v-line">
+                        <div>
+                            <h4 class="s-color">Top Selling</h4>
+                            <div class="margintop d-flex j-content">
+                                <span>5</span>
+                                <span>2500</span>
+                            </div>
+                            <div class="margintop">
+                                <span>Last 7 days</span>
+                                <span class="mrg-left94">Cost</span>
+                            </div>
+                        </div>
+                        <img src="assets/img/Line 10.svg" alt="v-line">
+                        <div>
+                            <h4 class="l-color">Low Stock</h4>
+                            <div class="margintop d-flex j-content">
+                                <span>12</span>
+                                <span>2</span>
+                            </div>
+                            <div class="margintop">
+                                <span>Ordered</span>
+                                <span class="mrg-left95">Not in stock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box ends -->
+                <!-- section starts -->
+                <section class="table-section margin-lr overflow-hidden">
+
+                    <div class="product-activity d-flex j-content">
+                        <span class="prod-mrg">Products</span>
+                        <div class="prod-mrg">
+                            <button class="blue-btn">
+                                <span>Add Products</span>
+                            </button>
+
+                            <button class="f-btn">
+                                <img src="assets/img/filter-icon.svg" alt="filter">
+                                <span>Filters</span>
+                            </button>
+                            <button class="f-btn">
+                                <span>Download All</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="only-table">
+                        <!-- Table starts -->
+                        <table>
+                            <tr>
+                                <th>Products</th>
+                                <th>Buying Price</th>
+                                <th>Quantity</th>
+                                <th>Threshold Value</th>
+                                <th>Expiry Date</th>
+                                <th>Availability</th>
+                            </tr>
+                            <tr>
+                                <td>maggie</td>
+                                <td>430</td>
+                                <td>43 Packets</td>
+                                <td>12 Packets</td>
+                                <td>11/12/22</td>
+                                <td class="instock">In-stock</td>
+                            </tr>
+                            <tr>
+                                <td>bru</td>
+                                <td>257</td>
+                                <td>22 Packets</td>
+                                <td>12 Packets</td>
+                                <td>21/12/22</td>
+                                <td class="outstock">Out of stock</td>
+                            </tr>
+                            <tr>
+                                <td>Red Bull</td>
+                                <td>405</td>
+                                <td>36 Packets</td>
+                                <td>9 Packets</td>
+                                <td>5/12/22</td>
+                                <td class="instock">In-stock</td>
+                            </tr>
+                            <tr>
+                                <td>Born Vita</td>
+                                <td>502</td>
+                                <td>14 Packets</td>
+                                <td>6 Packets</td>
+                                <td>8/12/22</td>
+                                <td class="outstock">Out of stock</td>
+                            </tr>
+                            <tr>
+                                <td>Horlicks</td>
+                                <td>530</td>
+                                <td>5 Packets</td>
+                                <td>5 Packets</td>
+                                <td>9/1/23</td>
+                                <td class="instock">In-stock</td>
+                            </tr>
+                            <tr>
+                                <td>Harpic</td>
+                                <td>605</td>
+                                <td>10 Packets</td>
+                                <td>5 Packets</td>
+                                <td>9/1/23</td>
+                                <td class="instock">In-stock</td>
+                            </tr>
+                            <tr>
+                                <td>Ariel</td>
+                                <td>408</td>
+                                <td>23 Packets</td>
+                                <td>7 Packets</td>
+                                <td>15/12/23</td>
+                                <td class="outstock">Out of stock</td>
+                            </tr>
+                            <tr>
+                                <td>Scotch Brite</td>
+                                <td>359</td>
+                                <td>43 Packets</td>
+                                <td>8 Packets</td>
+                                <td>6/6/23</td>
+                                <td class="instock">In-stock</td>
+                            </tr>
+                            <tr>
+                                <td>Coca cola</td>
+                                <td>205</td>
+                                <td>41 Packets</td>
+                                <td>10 Packets</td>
+                                <td>11/11/22</td>
+                                <td class="lstock">Low stock</td>
+                            </tr>
+                            <tr>
+                                <td>Coca cola</td>
+                                <td>205</td>
+                                <td>41 Packets</td>
+                                <td>10 Packets</td>
+                                <td>11/11/22</td>
+                                <td class="lstock">Low stock</td>
+                            </tr>
+                            <tr>
+                                <td>Coca cola</td>
+                                <td>205</td>
+                                <td>41 Packets</td>
+                                <td>10 Packets</td>
+                                <td>11/11/22</td>
+                                <td class="lstock">Low stock</td>
+                            </tr>
+                            <tr>
+                                <td>Coca cola</td>
+                                <td>205</td>
+                                <td>41 Packets</td>
+                                <td>10 Packets</td>
+                                <td>11/11/22</td>
+                                <td class="lstock">Low stock</td>
+                            </tr>
+                            <tr>
+                                <td>Coca cola</td>
+                                <td>205</td>
+                                <td>41 Packets</td>
+                                <td>10 Packets</td>
+                                <td>11/11/22</td>
+                                <td class="lstock">Low stock</td>
+                            </tr>
+                            <tr>
+                                <td>Coca cola</td>
+                                <td>205</td>
+                                <td>41 Packets</td>
+                                <td>10 Packets</td>
+                                <td>11/11/22</td>
+                                <td class="lstock">Low stock</td>
+                            </tr>
+                            <tr>
+                                <td>Coca cola</td>
+                                <td>205</td>
+                                <td>41 Packets</td>
+                                <td>10 Packets</td>
+                                <td>11/11/22</td>
+                                <td class="lstock">Low stock</td>
+                            </tr>
+                        </table>
+                        <!-- Table ends -->
+                    </div>
+                    <!-- footer starts -->
+                    <footer>
+                        <div class="footer d-flex j-content">
+                            <button>
+                                <span>Previous</span>
+                            </button>
+                            <img src="assets/img/page-icon.svg" alt="pagenumber">
+                            <button>
+                                <span>Next</span>
+                            </button>
+                        </div>
+                    </footer>
+                    <!-- footer ends -->
+                </section>
+                <!-- section ends -->
+            </div>
+        </div>
+
+        <!--  wrapper class  ends -->
+    </div>
+</body>
+
+</html>

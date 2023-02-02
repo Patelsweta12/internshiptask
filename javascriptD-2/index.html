@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 assignment</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Assignment-1</h1>
+    <script>
+        // T-1 Create a date object with today's date 
+        let todaysDate = new Date();
+        let currentdate = todaysDate.getDate();
+        document.write(`Today's date is ${currentdate} ` + "<br>");         // to get only date getDte is used
+
+        let todayDate1 = new Date();
+        document.write(todayDate1 + "<br>");  // to get complete date 
+
+
+        // T-2 Create a date object with 15 december 
+        let date = new Date('15 December 2022');
+        document.write(date + "<br>");
+
+        // program to write the current Day and Time in specific format
+        var today = new Date();
+        var day = today.getDay();
+        var listOfDays = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];     // to get the name of the day we nned to provide list of days
+        document.write(day + "<br>");
+        document.write(`Today is ${listOfDays[day]}.` + "<br>");
+
+
+        var hour = today.getHours(); // to get current  time.
+        var min = today.getMinutes();
+        var seconds = today.getSeconds();
+        var milisec = today.getMilliseconds();
+        var ampm = (hour >= 12) ? " PM " : " AM ";
+        document.write(`Current time is: ${hour} ${ampm} : ${min} : ${seconds} : ${milisec}.` + "<br>");
+
+
+        // Square of the number
+        let snum = Math.sqrt(566);
+        document.write(snum + "<br>");
+
+        //To find maximum number from given number
+        let maxnum = Math.max(4, 5, 7, 3, 4, 10)
+        document.write(`Maximum value is ${maxnum}` + "<br>");
+
+        // Random number generator
+        let randomnumber = Math.random() *10;
+        document.write(randomnumber  + "<br>");
+
+        // check if the given  number is greater then 100 and less than 500
+        let numb = 300;
+        if(numb>100 && numb<500){
+            document.write(`The given number is greater then 100 and less than 500` + "<br>")
+        }
+        else{
+            document.write(`The given  number is not  greater then 100 and less than 500` + "<br>")
+        }
+
+
+        // Return true if the arguments are equal and false if not
+        var check1 = (0 ==="0") ? "true" : "false";
+        var check2 = (1===1) ? "true" : "false";
+        document.write(check1 + "<br>");
+        document.write(check2 + "<br>");
+
+       
+
+
+
+
+    </script>
+</body>
+
+</html>
