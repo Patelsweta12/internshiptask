@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop And Conditional Statments</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;"> Javascript - Loop And Conditional Statments</h1>
+    <script>
+        // Reverse string uing for loop.
+        var str = 'hello I am xyz';
+        for (let i = str.length - 1; i >= 0; i--) {
+            document.write(str[i])
+        }
+        document.write("<br>")
+
+
+
+        // Reverse string using while loop
+        var str1 = 'sweta';
+        var i = str1.length - 1;
+        while (i >= 0) {
+            document.write(str1[i]);
+            i--;
+        }
+        document.write("<br>")
+
+        // Create a function to calculate the sum of numbers in array.
+        function sumOfArray(arr) {
+            let total = 0;
+            for (var i = 0; i < arr.length; i++) {
+                total = total + arr[i];
+            }
+            document.write(total);
+        }
+        sumOfArray([2, 5, 0, 7, 4, 1, 3, 0, 2, 5, 0, 1, 3, 1]);
+
+
+        document.write("<br>")
+        // grading system using switch statement
+        var grade = 75;
+        switch (true) {
+            case grade>=90:
+                document.write(" A Grade ")
+                break;
+                case grade>=80 && grade<89:
+                document.write(" B Grade ")
+                break;
+                case grade>=70 && grade<79:
+                document.write(" C Grade ")
+                break;
+                case grade>=60 && grade<69:
+                document.write(" D Grade ")
+                break;
+                case grade<=59:
+                document.write(" F Grade ")
+                break;
+            default:
+                document.write("Enter the valid marks")
+                break;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
