@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object</title>
+</head>
+
+<body>
+    <script>
+
+
+        //      var animal = {name:"swan", color:"white" , type:"bird"};  // Object
+        //     var anima2 = { "name": "swan", "color": "white", "type": "bird" };  //JSON object
+        // var animal1 =`{"name":"swan","color":"white","type":"bird"}`;//JSON String
+
+        // 1.Program to convert JSON to string.
+        var animal = { name: "crow", color: "Black", type: "Bird" };
+        console.log(typeof animal);
+        var strfy = JSON.stringify(animal);
+        console.log(typeof strfy);
+        document.write("<br>")
+
+        // 2. Program to convert string to  JSON.
+        var stringTojson = JSON.parse(strfy);
+        console.log(typeof stringTojson);
+        console.log(stringTojson);
+
+
+        // 3. Program to check if two objects have same values.
+        var obj1 = {name:"sweta",age:"22",add:"valsad"};
+        console.log(typeof obj1);
+        var objToStr1 = JSON.stringify(obj1);
+        console.log(typeof objToStr1);
+
+        var obj2 = {name:"sweta",age:"22",add:"valsad"};
+        console.log(typeof obj2);
+        var objToStr2 = JSON.stringify(obj2);
+        console.log(typeof objToStr2);
+
+        console.log(objToStr1 === objToStr2);
+        
+
+
+    </script>
+</body>
+
+</html>

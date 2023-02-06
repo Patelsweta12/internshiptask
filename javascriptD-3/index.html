@@ -44,25 +44,56 @@
         // grading system using switch statement
         var grade = 75;
         switch (true) {
-            case grade>=90:
+            case grade >= 90:
                 document.write(" A Grade ")
                 break;
-                case grade>=80 && grade<89:
+            case grade >= 80 && grade < 89:
                 document.write(" B Grade ")
                 break;
-                case grade>=70 && grade<79:
+            case grade >= 70 && grade < 79:
                 document.write(" C Grade ")
                 break;
-                case grade>=60 && grade<69:
+            case grade >= 60 && grade < 69:
                 document.write(" D Grade ")
                 break;
-                case grade<=59:
+            case grade <= 59:
                 document.write(" F Grade ")
                 break;
             default:
                 document.write("Enter the valid marks")
                 break;
         }
+        document.write("<br>")
+
+
+
+        // Create a array of object where each object describes the movie and has some prpperties indicating boolean for wathed and not watched iterate through the array of movies.
+
+        var movies = [
+            {
+                title: 'Suicide Squad', director: 'David Ayer', watched: true
+            },
+            {
+                title: 'Pathaan', director: 'Siddhart Anand', watched: false
+            },
+            {
+                title: 'Shershaah', director: 'Vishnu Vardhan', watched: true
+            }
+        ]
+        function chooseMovie() {
+            for (let i = 0; i < movies.length; i++) {
+                if (movies[i].watched==true){
+                    document.write(`You already watched` + " " + movies[i].title +" "+ `by` + "  " +  movies[i].director);
+                    document.write("<br>")
+                }
+                else{
+                    document.write(`You still need to watch` + " " + movies[i].title +" "+ `by` + " " +  movies[i].director);
+                    document.write("<br>")
+                }
+                
+            }
+        }
+        chooseMovie();
 
 
 
