@@ -13,7 +13,7 @@ body {
 }
 
 :root {
-    --font-family: sans-serif;
+    
     --aside-text-color: #5D6679;
     --blue: #1570EF;
     --yellow: #E19133;
@@ -21,11 +21,13 @@ body {
     --tomato-red: #F36960;
     --green: #10A760;
     --red: #DA3E33;
+    --fontfamily: sans-serif
 }
 
 /* helper class starts */
 .d-flex {
     display: flex;
+    
 }
 
 .asideDataText {
