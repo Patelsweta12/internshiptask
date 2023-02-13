@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions</title>
+</head>
+
+<body>
+    <script>
+        // 1. Write a JavaScript function that reverse a number.
+        function reverseNuber(s) {
+            let strOfNum = String(s);
+            let reverse = "";
+            // document.write(typeof strOfNum);
+            for (let i = strOfNum.length - 1; i >= 0; i--) {
+                reverse += strOfNum[i];
+            }
+            document.write(reverse);
+        }
+        reverseNuber(122);
+        document.write("<br>");
+
+        // 2. Write a JavaScript function that returns a passed string with letters in alphabetical order.  split sort join
+        function givenStr(str) {
+            let splitstring = str.split("");
+            let sortstring = splitstring.sort();
+            let revjoin = sortstring.join("");
+            document.write(str.split(""), splitstring.sort(), sortstring.join(""));
+        }
+        givenStr("rivet");
+        document.write("<br>");
+
+        // // 3. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+        // function strup(str) {
+        //     let strsplit = str.split(' ');
+        //     document.write(strsplit);
+        //     let cap = strsplit.charAt(0)
+        //    let fcap = cap.toUpperCase();
+
+
+        // }
+        // strup("sweta patel")
+
+
+
+        // let line = "hello im sweta"; //o,6,9
+        // let xyz = line.split(" ")
+        // let ind1 = 0;
+        // let ind2 = 6;
+        // let ind3 = 9;
+        // let foundchar = line.charAt(0);
+        // let upper = foundchar.toUpperCase();
+        // document.write(xyz);
+
+//         function one (){
+//             console.log("hello");
+//         }
+
+//         function second(a,b,c) {
+//             return a+b;
+           
+// }
+// document.write(1,2,one());
+
+// function
+// function greet(a, b) {
+//     console.log(a);
+//     b();
+// }
+
+// // callback function
+// function callMe() {
+//     console.log('I am b function');
+// }
+
+// // passing function as an argument
+// greet('Peter', callMe);
+
+
+
+// function greet() {
+//     return 'Hello';
+// }
+
+// // passing function greet() as a parameter
+// function name(a, b)
+// {
+
+    
+//     return a+b;
+    
+
+    
+// }
+
+// document.write((1,2,greet));
+
+
+
+
+
+function greet(){
+    return "hello"
+}
+
+
+
+function sum(a,b){
+    return a+b;
+}
+document.write(sum(2,3,greet()));
+    </script>
+</body>
+
+</html>

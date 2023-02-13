@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice
+
+    </title>
+</head>
+
+<body>
+    <script>
+        //.at
+        let arr1 = [1, 2, 3, 4, 5, 6];
+        let ans1 = arr1.at(4);
+        document.write(ans1);
+        document.write("<br>");
+        let ans2 = arr1.at(5, 2); //we can not pass two value.
+        document.write(ans2);
+        document.write("<br>");
+
+
+        //functionn without aerrow 
+        function area(r) {
+            let pi = 3.14;
+            return pi * r * r;
+        }
+        document.write(area(7));
+
+        document.write("<br>");
+
+        //with aerrwo
+        let areacircle = r => {
+
+            let pi = 3.14;
+            return pi * r * r;
+        }
+        document.write(areacircle(7));
+
+        document.write("<br>");
+
+
+
+        //more simplyfy
+        let area1 = (a, b, c, d) => a + b + c + d;
+        document.write(area1(2, 2, 2, 2));
+        document.write("<br>");
+
+
+        //Array Methods.......
+
+        //1) charAt()
+        let array = [1, 2, 3, 4, 5, 6, 6, 7, 8];
+        let index = -3;
+        // let index1 =4;
+        let characterAt = array.at(index); // Dos not aacept multiple parameters.
+        document.write(characterAt);
+        document.write("<br>");
+
+        //2) concate()
+        let arr2 = ["sweta", 24, "patel", 5, 6, 7];
+        let arr3 = ["harsh", 5, "valsad", 54, 64, 74];
+        let arr4 = ["nmarata", 3, "tejas", 52, 62, 72, true];
+        let arr5 = ["sweta", 24, "patel", 5, 6, 7];
+        let concatearry = arr2.concat(arr3, -5, arr4, arr5); //Accept multiple parameter
+        document.write(concatearry);
+        document.write("<br>");
+
+        document.write(typeof concatearry);
+
+        document.write("<br>");
+
+        //3) copyWithin().
+        let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        document.write(arr6.copyWithin(0, 3, 6));  //4,5,6,4,5,6,7,8,9
+        document.write("<br>");
+
+        document.write(arr6.copyWithin(6, 0, 5));      //4,5,6,4,5,6,4,5,6
+        document.write("<br>");
+        document.write(arr6.copyWithin(0, 1, 3));
+        document.write("<br>");
+
+        //4) .every()
+
+        let arr7 = [3, 4, 5, 6, 7, 8, 9, 11];           //for digits
+        let toCheckarrayValue = givenValue => givenValue <= 10;
+        document.write(arr7.every(toCheckarrayValue));
+        document.write("<br>");
+
+
+
+
+        let arr8 = ["swetaa", "maahi", "nupur"];
+        let toCheckString = givenString => (givenString.length > 5);
+        document.write(arr8.every(toCheckString));
+        document.write("<br>");
+
+
+        //5) .fill()
+        let arr9 = [1, 2, 3, 4];
+        document.write(arr9.fill(1, 2, 4)); //1,2,1,1
+        document.write("<br>");
+
+        let arr10 = ["sweta", "maahi", "nupur"];
+        document.write(arr10.fill("fency", 2));
+        document.write("<br>");
+
+        // 6) .filter()
+        let arr11 = [1, 2, 3, 4, 5, 6, 7, 8];
+        let filterarry = numbers => numbers > 5;
+        document.write(arr11.filter(filterarry));
+        document.write("<br>");
+
+        let arr12 = ["sweta", "maahi", "fency", "sanjana", "yesha", "nupur"];
+        document.write(arr12.filter(givenString => givenString.length <= 5));
+        document.write("<br>");
+
+
+        let arr13 = [
+            { name: "sweta", id: 1, phone: 7676768686 },
+            { name: "maahi", id: 2, phone: 576577657657 },
+            { name: "sweta", id: 3, phone: 757575757 }
+        ];
+
+        console.log(arr13.filter(givenobject => givenobject.name == "sweta"));
+        document.write("<br>");
+
+        //7) .find()
+        const array14 = [5, 12, 8, 130, 44];
+
+        document.write(array14.find(element => element > 10));
+        document.write("<br>");
+
+
+        let arr15 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let cahr = arr15.filter(num => num % 2 == 0)
+        document.write(cahr);
+        document.write("<br>");
+
+        let arr16 = [
+            {
+                id: 1,
+                name: 'abc',
+            },
+            {
+                id: 2,
+                name: 'abeqwe',
+            },
+            {
+                id: 3,
+                name: 'asdafg',
+            },
+            {
+                id: 4,
+                name: 'hfgdf',
+            },
+            {
+                id: 2,
+                name: 'asdafg',
+            },
+        ];
+        let dynamicId = 2;
+        let selectedRecord = arr16.find(item => item.id == dynamicId)
+        console.log(selectedRecord);
+        document.write("<br>");
+
+
+        // 8) .findIndex()
+        let arr17 = [2, 3, 4, 5, 6, 7, 8, 9, 0, 122, 32, 1];
+        document.write(arr17.findIndex(num => num > 30)); //output  should be  122 but as findIndex returns index o/p is 9.
+        document.write("<br>");
+
+
+        let arr18 = [
+            {
+                id: 1,
+                name: 'abc',
+            },
+            {
+                id: 2,
+                name: 'abeqwe',
+            },
+            {
+                id: 3,
+                name: 'asdafg',
+            },
+            {
+                id: 4,
+                name: 'hfgdf',
+            },
+            {
+                id: 2,
+                name: 'asdafg',
+            },
+        ]
+
+        document.write(arr18.findIndex(element => element.id == 3));
+        document.write("<br>");
+
+        // 9) .findLast()
+
+        let arr19 = ["nalinaksha", "sweta", "maahi", "zel", "fency", "sanjana", "suruchi"];
+        document.write(arr19.findLast(str => str.length > 5));
+        document.write("<br>");
+
+        // 10) .findLastIndex()
+        let arr20 = ["nalinaksha", "sweta", "maahi", "suruchi", "zel", "fency"];
+        document.write(arr20.findLastIndex(str => str.length > 5));
+        document.write("<br>");
+
+        //11) .foreach()
+
+        let arr21 = ["nalinaksha", "sweta", "maahi", "zel", "fency", "sanjana", "suruchi"];
+        arr21.forEach(item => {
+            if (item.length > 4) {
+                document.write(item)
+            }
+        });
+        document.write("<br>");
+
+
+
+        // 12) .includes()
+        let arr22 = [34, 45, 3, 2, 44, 3, 23, 232];
+        document.write(arr22.includes(2));
+        document.write("<br>");
+
+
+        // 13) indexOf()
+        let arr23 = ["megha", "piya", "sweta", "namrat", "harsh", "eklavya", "alay", "tejas"];
+        document.write(arr23.indexOf("sweta"));
+        document.write("<br>");
+        let arr24 = [
+            {
+                id: 1,
+                name: 'abc',
+            },
+            {
+                id: 2,
+                name: 'abeqwe',
+            },
+            {
+                id: 3,
+                name: 'asdafg',
+            },
+            {
+                id: 4,
+                name: 'hfgdf',
+            },
+            {
+                id: 2,
+                name: 'asdafg',
+            },
+        ]
+
+        document.write(arr24.indexOf(element => element.name == "asdafg"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
