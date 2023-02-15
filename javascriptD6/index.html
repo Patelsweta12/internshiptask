@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects and functions</title>
+</head>
+
+<body>
+    <script>
+        // 1 . Write a JavaScript function to retrieve all the values of an object's properties.
+
+        let obj1 = {
+            name: "sweta",
+            tech: "frontend",
+            age: 22,
+        }
+        function objvalue(obj1) { //using normal function       //used for global scope
+
+            return Object.values(obj1);
+
+        }
+        let abc = objvalue(obj1);
+        console.log(abc);
+
+        let xyz = function (obj1) { // using function expression   //it limits the availability
+            return Object.values(obj1);
+
+        }
+
+        console.log(xyz(obj1));
+
+
+
+        // 2. Write a JavaScript function to convert an object into a list of `[key, value]` pairs.
+        let obj2 = {
+            name: "Harsh",
+            tech: "DevOps",
+            age: 18,
+        }
+        console.log(Object.entries(obj2));       // using method
+
+
+        let list = function (obj2) {            // using for in 
+            var arr = [];
+            for (const key in obj2) {
+                arr.push([key, obj2[key]]);
+
+            }
+            return arr;
+        }
+        console.log(list(obj2));
+
+
+
+        // 3. Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys.
+        let obj3 = {
+            name: "Namarata",
+            tech: "QA",
+            age: 27,
+        }
+
+        let copy1 = function (obj3) {
+            var obj4 = {};
+            for (const key in obj3) {
+
+                obj4[obj3[key]] = key;
+            }
+            return obj4;
+
+        }
+        console.log(copy1(obj3));
+
+
+        // 5. Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+        function dulpicateitem(a) {
+            let emptyarr = [];
+            emptyarr = [...new Set(a)]
+            return emptyarr;
+        }
+        let raj = dulpicateitem([1, 2, 3, 4, 2]);
+        console.log(raj);
+
+
+        // 6. Write a JavaScript function to merge two arrays and removes all duplicates elements.
+        let arrA = [1, 2, 3, 4];
+        let arrB = [5, 6, 7,3];
+        function concateArry(a,b) {
+            let store = a.concat(b);
+            let store1 =[...new Set (store)]
+            return store1;
+        }
+        console.log(concateArry(arrA,arrB));
+
+
+        // 7. Write a javascript function to remove the specific element from an array.
+        function rem(a, b) {
+            let newarr = []
+            newarr = arr1.filter(value => (value !== b));
+            return newarr;
+        }
+        let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let removedarr = rem(arr1, 7);
+        console.log(removedarr);
+
+
+        // 8. Write a javascript function to get the random item from an array [1,2,3,4,5,6,7,8,9,10]
+        let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function randomelement(a) {
+            let storeRandomEle = array1[Math.floor(Math.random() * array1.length)];
+            return storeRandomEle;
+        }
+        console.log(randomelement());
+
+
+        // 9. Write a javascript function to filter false,Null,0 and blank values from an array. [58,"","abcd",true,null,false,0]
+        let array9 = [58, " ", "abcd", true, null, false, 0];
+        function pqr(c) {
+            let filterarr = array9.filter(element => element == "false" || "null" && element == " " || 0);
+            return filterarr;
+
+        }
+        console.log(pqr());
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

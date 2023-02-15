@@ -260,6 +260,59 @@
 
 
 
+        // Object's   methods
+        // 1. Object.assign()
+        let obj1 =
+        {
+            firstName: "sweta",
+            lastName: "patel",
+            age: 22,
+            eyeColor: "brown"
+
+
+        }
+        let obj2 =
+        {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue",
+            a: 10
+        }
+        let objectassigned = Object.assign(obj1, obj2);
+        console.log(objectassigned);
+
+        // 2. Object.entries()
+
+        let obj3 = {
+            name: "sweta",
+            age: 22
+        }
+        console.log(Object.entries(obj3));
+
+        // 3. freeze()
+        let obj4 = {
+            name: "Eklavya",
+            age: 18
+        }
+
+
+
+        console.log(Object.freeze(obj4));
+        obj4.name = "sweta"
+        console.log(obj4);
+
+        //4. hasOwn()
+        let onj5 = {
+            name: "harsh",
+            age: 19,
+        }
+        let store = Object.hasOwn(onj5, "experience");
+        console.log(store);
+        let store2 = Object.hasOwn(onj5, "age");
+        console.log(store2);
+
+
 
 
 
