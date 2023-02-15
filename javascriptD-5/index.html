@@ -11,32 +11,32 @@
 <body>
     <script>
         // 1. Write a JavaScript function that reverse a number.
-        function reverseNuber(s) {
-            let strOfNum = String(s);
+        function reverseNuber(n) {
+            let strOfNum = String(n);
             let reverse = "";
-            // document.write(typeof strOfNum);
             for (let i = strOfNum.length - 1; i >= 0; i--) {
                 reverse += strOfNum[i];
             }
             console.log(reverse);
         }
         reverseNuber(122);
-        document.write("<br>");
 
-        // 2. Write a JavaScript function that returns a passed string with letters in alphabetical order.  split sort join
-        function givenStr(str) {
+
+
+        // 2. Write a JavaScript function that returns a passed string with letters in alphabetical order. 
+        function alphabetical(str) {
             let splitstring = str.split("");
             let sortstring = splitstring.sort();
             let revjoin = sortstring.join("");
-           console.log(str.split(""), splitstring.sort(), sortstring.join(""));
+            console.log(str.split(""), splitstring.sort(), sortstring.join(""));
         }
-        givenStr("rivet");
-        document.write("<br>");
+        alphabetical("rivet");
 
-         // 3. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
-        function abc(str) {
+
+
+        // 3. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+        function upparcaseString(str) {
             let words = str.split(" ");
-            console.log(words);
             let combinedString = "";
             words.forEach((word) => {
                 word = word.charAt(0).toUpperCase() + word.slice(1);
@@ -46,25 +46,82 @@
             return combinedString;
         }
 
-        console.log(abc("hello my name is sweta"));
-        
+        console.log(upparcaseString("hello my name is sweta"));
+
+
 
         // 4. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
-        function longeststring(str){
+        function longestString(str) {
+            let splitString = str.split(" "); //['Today', 'is', 'great', 'weather']
+            let lengthOfWords = []; //5,2,5,7
+            for (const iterator of splitString) {
+                lengthOfWords.push(iterator.length);
+            }
+            let maxLenghtOfword = Math.max(...lengthOfWords); //7
+            let indexofMax = lengthOfWords.indexOf(maxLenghtOfword);//3
+            return splitString[indexofMax];
+        }
+        let longestWord = longestString("Today is great weather");
+        console.log(longestWord);
+
+
+
+        // 5. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+        function numberofVowels(str) {
+            let splitString = str.split(""); // ['s', 't', 'A', 'r', 't', 'O', ' ', 'a', ' ', 'd', 'a', 'y', ' ', 'w', 'i', 't', 'h', ' ', 's', 'm', 'i', 'l', 'e']
+
+            let abc = splitString.filter(element =>
+                (element == 'A' || element == 'a' || element == 'E' || element == 'e' || element == 'I' || element == 'i' || element == 'o' || element == 'O' || element == 'U' || element == 'u')
+            )
+            return abc.length;
+
 
         }
+        let totalNumberOfArray = numberofVowels("stArtO a day with smile");
+        console.log(totalNumberOfArray);
+
+
+
+        // 6. Write a JavaScript function that accept a list of country names as input and returns the longest country name as output.
+        let countryList = ["India", "Maldives", "China", "Bhutan"];
+        function longestCountry(country) {
+            let emptyarr = [];      //5,8, 5,6
+            for (const iterator of country) {
+                emptyarr.push(iterator.length);
+            }
+            let maxlenght = Math.max(...emptyarr);   //8
+            let indexofMaxLength = emptyarr.indexOf(maxlenght); //1
+
+            return country[indexofMaxLength];
+
+        }
+        let longestCountryName = longestCountry(countryList);
+        console.log(longestCountryName);
+
 
 
         // 7. Write a JavaScript program to pass a 'JavaScript function' as parameter.
-
         function one() {
-            return ("my name is sweta patel");
-            }
+            return "Hi I'am Sweta";
+        }
         function two(a, b, c) {
-      var x = a+b;
-      return x +" "+ c;
-             }
-        console.log(two(2,3,one()));
+            return a + b + c;
+        }
+        console.log(two(2, 3, one()));
+
+
+
+        // 8. Write a JavaScript function to get the function name.
+        function getFunctionName() {
+            return arguments.callee.name;
+            
+        }
+        console.log(getFunctionName());
+
+
+
+
+
     </script>
 </body>
 

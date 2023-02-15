@@ -96,13 +96,13 @@
 
 
         // 7. Write a javascript function to remove the specific element from an array.
-        function rem(a, b) {
+        function removeSpecific(a, b) {
             let newarr = []
             newarr = arr1.filter(value => (value !== b));
             return newarr;
         }
         let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        let removedarr = rem(arr1, 7);
+        let removedarr = removeSpecific(arr1, 7);
         console.log(removedarr);
 
 
@@ -116,13 +116,14 @@
 
 
         // 9. Write a javascript function to filter false,Null,0 and blank values from an array. [58,"","abcd",true,null,false,0]
+
         let array9 = [58, " ", "abcd", true, null, false, 0];
         function pqr(c) {
-            let filterarr = array9.filter(element => element == "false" || "null" && element == " " || 0);
+            let filterarr = c.filter(element => element !== false && element !==null && element !== " " && element !== 0);
             return filterarr;
 
         }
-        console.log(pqr());
+        console.log(pqr(array9));
 
 
 
