@@ -74,34 +74,39 @@
         console.log(copy1(obj3));
 
 
+        // 4. Write a JavaScript program to find the most frequent item of an array.
+
+
+
         // 5. Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
         function dulpicateitem(a) {
             let emptyarr = [];
             emptyarr = [...new Set(a)]
             return emptyarr;
         }
-        let raj = dulpicateitem([1, 2, 3, 4, 2]);
-        console.log(raj);
+        let duplicateRemoved = dulpicateitem([1, 2, 3, 4, 2]);
+        console.log(duplicateRemoved);
 
 
         // 6. Write a JavaScript function to merge two arrays and removes all duplicates elements.
         let arrA = [1, 2, 3, 4];
-        let arrB = [5, 6, 7,3];
-        function concateArry(a,b) {
+        let arrB = [5, 6, 7, 3];
+        function concateArry(a, b) {
             let store = a.concat(b);
-            let store1 =[...new Set (store)]
+            let store1 = [...new Set(store)]
             return store1;
         }
-        console.log(concateArry(arrA,arrB));
+        console.log(concateArry(arrA, arrB));
 
 
         // 7. Write a javascript function to remove the specific element from an array.
+        let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         function removeSpecific(a, b) {
             let newarr = []
             newarr = arr1.filter(value => (value !== b));
             return newarr;
         }
-        let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        
         let removedarr = removeSpecific(arr1, 7);
         console.log(removedarr);
 
@@ -119,7 +124,7 @@
 
         let array9 = [58, " ", "abcd", true, null, false, 0];
         function pqr(c) {
-            let filterarr = c.filter(element => element !== false && element !==null && element !== " " && element !== 0);
+            let filterarr = c.filter(element => element !== false && element !== null && element !== " " && element !== 0);
             return filterarr;
 
         }
