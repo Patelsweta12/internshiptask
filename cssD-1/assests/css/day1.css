@@ -1,0 +1,278 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #F5F5F5;
+}
+
+:root {
+    --amt-color: #4D5E80;
+    --text-color: #ADB8CC;
+    --white: #FFFFFF;
+}
+
+.container {
+    display: inline-block;
+}
+
+.credit-card-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--white);
+    padding: 15px;
+    display: inline-block;
+
+
+
+}
+
+.credit-card-text {
+
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.credit-card-amt {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: var(--amt-color);
+    padding-top: 20px;
+
+
+
+}
+
+.credit-card-name {
+    font-weight: 700;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: var(--text-color);
+
+
+
+}
+
+.box {
+    width: 255px;
+    height: 255px;
+    background-color: #FF6633;
+    border-radius: 10px;
+    margin-left: 104px;
+    margin-top: 241px;
+}
+
+.box-icon {
+    padding-top: 45px;
+    padding-left: 47px;
+}
+
+.box-text {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--white);
+    padding-top: 30px;
+    padding-left: 40px;
+
+}
+
+.box-amt {
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--white);
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.circle-invest-icon {
+    height: 60px;
+    width: 60px;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 23px;
+    margin-top: 113px;
+    margin-left: 189px;
+    display: inline-block;
+}
+
+.circle-invest-data,
+.circle-cashback-data,
+.circle-cashback1-data {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.circle-invest-amt {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--amt-color);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.circle-invest-text {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--text-color);
+
+}
+
+.circle-cashback-icon {
+    height: 60px;
+    width: 60px;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 23px;
+    margin-top: 113px;
+    margin-left: 189px;
+    display: inline-block;
+}
+
+.circle-cashback-amt {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--amt-color);
+    display: inline-block;
+}
+
+.circle-cashback-text {
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 273px;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+
+.circle-cashback1-icon {
+    height: 60px;
+    width: 60px;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 23px;
+    margin-top: 113px;
+    margin-left: 189px;
+    display: inline-block;
+}
+
+.circle-cashback1-amt {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--amt-color);
+    display: inline-block;
+}
+
+.circle-cashback1-text {
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 273px;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+
+
+.first-circle,
+.second-circle,
+.third-circle,
+.box1 {
+    display: inline-block;
+}
+
+
+.box1 {
+    width: 160px;
+    height: 145px;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+.box1-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    padding: 15px;
+   
+    border: #4D5E80;
+    border: 2px solid #F5F6F7;   
+    margin-top: 30px;
+    margin-left: 50px;
+    
+   
+   }
+   .box1-text{
+    font-weight: 700;
+font-size: 12px;
+color: #4D5E80;
+padding-top: 15px;
+   }
+
+
+   .box2 {
+    width: 160px;
+    height: 145px;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 150px;
+    display: inline-block;
+}
+
+.box2-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    padding: 15px;
+     
+    border: #4D5E80;
+    border: 2px solid #F5F6F7;   
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+   }
+   .box2-text{
+    font-weight: 700;
+font-size: 12px;
+color: #4D5E80;
+padding-left: 30px;
+   }
+
+   .box3 {
+    width: 160px;
+    height: 145px;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 150px;
+    display: inline-block;
+}
+
+.box3-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    padding: 15px;
+    background-color: var(--white);
+    border: #4D5E80;
+    border: 2px solid #F5F6F7;   
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+   }
+   .box3-text{
+    font-weight: 700;
+font-size: 12px;
+color: #4D5E80;;
+padding-left: 30px;
+   }
