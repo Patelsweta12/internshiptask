@@ -1,0 +1,21 @@
+{
+ 
+  
+  "table":[
+    {
+      "name":"sweta",
+      "id":1,
+      "address":"valsad"
+    },
+    {
+      "name":"harsh",
+      "id":2,
+      "address":"surat"
+    },
+    {
+      "name":"namrata",
+      "id":3,
+      "address":"chikhali"
+    }
+  ]
+}
