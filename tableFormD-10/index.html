@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-Form</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="tech">Technology:</label>
+        <input type="text" id="tech" name="tech"><br><br>
+
+        <button id="submit" type="submit" value="Submit">Save Student</button>
+
+        <button type="update" id="update" value="update">Update Student</button>
+
+    </form>
+    <script>
+        //fetch table data
+        let onSubmit = document.getElementById("submit");
+        onSubmit.addEventListener("click", fetchData);
+        function fetchData() {
+            let rcvFname = document.getElementById("fname").value;
+            let rcvLname = document.getElementById("lname").value;
+            let rcvTech = document.getElementById("tech").value;
+            fetch("http://localhost:3000/form", {
+                method: "POST",
+                body: JSON.stringify({
+                    fname: rcvFname,
+                    lname: rcvLname,
+                    tech: rcvTech,
+                }),
+                headers: { 'content-type': 'application/json' },
+            }).then(response => response.json()).then(data => data).catch(error => error)
+
+        }
+
+        //table starts
+        let table = document.createElement("table");
+        console.log(table);
+
+        //table head starts.
+        let headers = [{ header: "Id", key: "id" }, { header: "First Name", key: "fname" }, { header: "Last Name", key: "lname" }, { header: "Technology", key: "tech" },];
+        function thead(table) {
+            let tHead = table.createTHead();
+            let row = tHead.insertRow();
+            for (const iterator of headers) {
+                let th = document.createElement("th");
+                row.appendChild(th);
+                let text = document.createTextNode(iterator.header)
+                th.appendChild(text);
+            }
+            let th = document.createElement("th");//for action 
+            let text = document.createTextNode("Action");
+            th.appendChild(text);
+            row.appendChild(th)
+        }
+        thead(table, thead);
+        //table head ends.
+        //to fetch data from db.json to table
+        fetch(" http://localhost:3000/form").then(response => response.json()).then(data => {
+            let tBody = table.createTBody("tbody");
+            for (const element of data) {
+                let row = tBody.insertRow();
+                for (const iterator of headers) {
+                    let td = row.insertCell();
+                    let text = document.createTextNode(element[iterator["key"]]);
+                    td.appendChild(text);
+                }
+                let td = document.createElement("td");
+                let deletBtn = document.createElement("button");
+                let deleteBtnText = document.createTextNode("Delete");
+                deletBtn.appendChild(deleteBtnText);
+                td.appendChild(deletBtn);
+                deletBtn.addEventListener("click", () => {
+                    fetch(`http://localhost:3000/form/${element.id}`,
+                        { method: "DELETE" });      //TO DELET THE DATA
+                })
+                let editBtn = document.createElement("button");
+                let editBtnText = document.createTextNode("Edit");
+                editBtn.appendChild(editBtnText);
+                td.appendChild(editBtn);
+                row.appendChild(td)
+
+                editBtn.addEventListener("click", () => {
+                    document.getElementById("fname").value = element.fname;
+                    document.getElementById("lname").value = element.lname;
+                    document.getElementById("tech").value = element.tech;
+
+//TO UPDATE THE DATA
+
+                    let updateBTn = document.getElementById("update"); 
+                    updateBTn.addEventListener("click", () => {
+                        fetch(`http://localhost:3000/form/${element.id}`,
+                            {
+                                method: "PUT",
+                                headers: { 'content-type':'application/json' },
+                                body: JSON.stringify(
+                                    {
+                                    fname:document.getElementById("fname").value,
+                                    lname:document.getElementById("lname").value,
+                                    tech:document.getElementById("tech").value
+                                }),
+                            }).then(response => response.json()).then(data =>data)
+
+                        // alert("HII");
+
+                    })
+                })
+
+            }
+        });
+
+
+
+
+        //table in  body
+        document.body.appendChild(table);
+
+    </script>
+</body>
+
+</html>

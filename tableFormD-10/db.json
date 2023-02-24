@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "form": [
+    {
+      "fname": "SAFAS",
+      "lname": "AFSDF",
+      "tech": "ASF",
+      "id": 1
+    },
+    {
+      "fname": "sweta",
+      "lname": "MAHHUFD",
+      "tech": "GDFSGDFGG",
+      "id": 2
+    },
+    {
+      "fname": "sweta",
+      "lname": "AFSDF",
+      "tech": "GDFSGDFFFFFFFF",
+      "id": 3
+    }
+  ]
+}
