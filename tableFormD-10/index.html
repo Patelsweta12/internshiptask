@@ -20,16 +20,19 @@
         <button id="submit" type="submit" value="Submit">Save Student</button>
 
         <button type="update" id="update" value="update">Update Student</button>
+        <br><br>
 
     </form>
     <script>
         //fetch table data
         let onSubmit = document.getElementById("submit");
+        onSubmit.style.backgroundColor="pink";
         onSubmit.addEventListener("click", fetchData);
         function fetchData() {
             let rcvFname = document.getElementById("fname").value;
             let rcvLname = document.getElementById("lname").value;
             let rcvTech = document.getElementById("tech").value;
+            onSubmit.style.backgroundColor="lightGreen";
             fetch("http://localhost:3000/form", {
                 method: "POST",
                 body: JSON.stringify({
@@ -45,7 +48,8 @@
         //table starts
         let table = document.createElement("table");
         console.log(table);
-
+        table.style. border="1px solid black";
+        table.style.collapse= "collapse";
         //table head starts.
         let headers = [{ header: "Id", key: "id" }, { header: "First Name", key: "fname" }, { header: "Last Name", key: "lname" }, { header: "Technology", key: "tech" },];
         function thead(table) {
@@ -57,7 +61,7 @@
                 let text = document.createTextNode(iterator.header)
                 th.appendChild(text);
             }
-            let th = document.createElement("th");//for action 
+            let th = document.createElement("th");    //for action column 
             let text = document.createTextNode("Action");
             th.appendChild(text);
             row.appendChild(th)
@@ -65,7 +69,7 @@
         thead(table, thead);
         //table head ends.
         //to fetch data from db.json to table
-        fetch(" http://localhost:3000/form").then(response => response.json()).then(data => {
+        fetch("http://localhost:3000/form").then(response => response.json()).then(data => {
             let tBody = table.createTBody("tbody");
             for (const element of data) {
                 let row = tBody.insertRow();
@@ -82,7 +86,9 @@
                 deletBtn.addEventListener("click", () => {
                     fetch(`http://localhost:3000/form/${element.id}`,
                         { method: "DELETE" });      //TO DELET THE DATA
-                })
+                          
+                }); deletBtn.style.backgroundColor="red";
+               
                 let editBtn = document.createElement("button");
                 let editBtnText = document.createTextNode("Edit");
                 editBtn.appendChild(editBtnText);
@@ -93,10 +99,13 @@
                     document.getElementById("fname").value = element.fname;
                     document.getElementById("lname").value = element.lname;
                     document.getElementById("tech").value = element.tech;
+                    editBtn.style.backgroundColor="MediumSeaGreen";
+                   
 
-//TO UPDATE THE DATA
+                    //TO UPDATE THE DATA
 
                     let updateBTn = document.getElementById("update"); 
+                    updateBTn.style.backgroundColor="lightGreen";
                     updateBTn.addEventListener("click", () => {
                         fetch(`http://localhost:3000/form/${element.id}`,
                             {
@@ -113,7 +122,7 @@
                         // alert("HII");
 
                     })
-                })
+                }); editBtn.style.backgroundColor="DodgerBlue";
 
             }
         });
