@@ -20,14 +20,26 @@
     {
       "fname": "sweta",
       "lname": "patel",
-      "tech": "QA",
+      "tech": "frontend",
+      "id": 1
+    },
+    {
+      "fname": "harsh",
+      "lname": "patel",
+      "tech": "php",
       "id": 2
     },
     {
-      "fname": "alay",
+      "fname": "namrata",
       "lname": "patel",
       "tech": "QA",
       "id": 3
+    },
+    {
+      "fname": "tejas",
+      "lname": "patel",
+      "tech": "java",
+      "id": 4
     }
   ]
 }
