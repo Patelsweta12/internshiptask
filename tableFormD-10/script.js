@@ -91,11 +91,8 @@ window.addEventListener("load", fetch("http://localhost:3000/form").then(respons
                     }).then(response => response.json()).then(data => data)
 
             })
-        }); editBtn.classList.add("edit-color", "edit-color-onclick", "border-radius", "cursor-pointer");
-
-
-
-    }
+        }); editBtn.classList.add("edit-color", "edit-color-onclick", "border-radius","cursor-pointer");
+}
 }))
  let tableContainer = document.createElement("div");
 tableContainer.className="table-scroll";
