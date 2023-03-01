@@ -16,7 +16,16 @@
   "profile": {
     "name": "typicode"
   },
-  "form": [
-    
+  "table": [
+    {
+      "fname": "sweta",
+      "lname": "",
+      "pEmail": "",
+      "oEmail": "",
+      "phone": "",
+      "salary": "",
+      "pass": "",
+      "id": 1
+    }
   ]
 }
