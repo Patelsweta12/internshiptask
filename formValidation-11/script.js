@@ -12,7 +12,8 @@ submitButton.addEventListener("click", (e) => {
 
   //   for FRIST NAME
   var alphNumericRegex = /^[0-9a-zA-Z]+$/;
-  if (firstName.trim() == "" || !firstName.match(alphNumericRegex)) {
+  if (firstName.trim() == "" || !firstName.match(alphNumericRegex))
+   {
     document.getElementById("firstName-error").innerHTML =
       "Enter your first name in alphanumeric form and no special character";
   } else {
@@ -36,7 +37,7 @@ submitButton.addEventListener("click", (e) => {
     !personalEmail.match(regexForPersonalEmail)
   ) {
     document.getElementById("personalEmail-error").innerHTML =
-      "enter your valid  personal email";
+      "Enter your valid  personal email";
   } else {
     document.getElementById("personalEmail-error").innerHTML = "";
     console.log(personalEmail);
@@ -45,7 +46,7 @@ submitButton.addEventListener("click", (e) => {
   var regexForOrgEmail = /^[a-zA-Z0-9._%+-]+@1rivet\.com/;
   if (orgEmail.trim() == "" || !orgEmail.match(regexForOrgEmail)) {
     document.getElementById("orgEmail-error").innerHTML =
-      "enter the valid Organization email ";
+      "Enter the valid Organization email ";
   } else {
     document.getElementById("orgEmail-error").innerHTML = "";
     console.log(orgEmail);
@@ -66,7 +67,7 @@ submitButton.addEventListener("click", (e) => {
   let salaryRegex = /^[0-9]*$/;
   if (salary <= 5000 || !salary.match(salaryRegex)) {
     document.getElementById("salary-error").innerHTML =
-      "enter the valid Salary amount that is greater than 5000 ";
+      "Enter the valid Salary amount that is greater than 5000 ";
   } else {
     document.getElementById("salary-error").innerHTML = "";
     console.log(salary);
