@@ -1,30 +1,34 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-body{
+
+body {
     background: #07787c;
-   
+
 }
-.form-container{
+
+.form-container {
     background-color: rgb(128, 185, 231);
-   color: black;
-   border-radius: 5%;
-   border: none;
-   max-width: 500px;
-   padding: 30px;
-   width: 100%;
-   height: 100%;
-   
+    color: black;
+    border-radius: 5%;
+    border: none;
+    max-width: 500px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+
 
 }
 
-#submit{
+#submit {
     background-color: rgb(12, 168, 216);
     border-radius: 10px;
     color: white;
@@ -33,32 +37,35 @@ body{
     height: 30px;
     margin-top: 20px;
     border: none;
-    
- 
+
+
 }
-.error{
+
+.error {
     color: red;
     display: block;
 }
-input{ 
-    width: 100%;
- }
-.form input:focus{
+
+.form input:focus {
     outline: 0;
- }
- input{
+}
+
+input {
     height: 30px;
-outline: 0;
- }
- .wrapper{
+    outline: 0;
+    width: 100%;
+}
+
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 
- }
-.btnClass{
+}
+
+.btnClass {
     display: flex;
-    align-items:center;
-    justify-content:end;
- }
+    align-items: center;
+    justify-content: end;
+}

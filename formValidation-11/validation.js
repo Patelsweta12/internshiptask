@@ -8,7 +8,20 @@ e.preventDefault();
   let phoneNumber = document.getElementById("phone").value;
   let salary = document.getElementById("salary").value;
   let password = document.getElementById("pass").value;
-//for FIRST NAME
+
+  //  var alphNumericRegex = /^[0-9a-zA-Z]+$/;
+  //   if (firstName.trim() == "" || !firstName.match(alphNumericRegex)) {
+  //     document.getElementById("firstNameerror").innerHTML = "Enter your first name in alphanumeric form and no special character";
+  //     let inputColor = document.getElementById("fname");
+  //     inputColor.style.border = "1px solid red";
+  //   }
+  //   else {
+  //     let inputColor = document.getElementById("fname");
+  //     inputColor.style.border = "1px solid green";
+  
+  //     document.getElementById("firstNameerror").innerHTML = "";
+  //     console.log(firstName);
+  //   }
   var alphNumericRegex = /^[0-9a-zA-Z]+$/;
   if (firstName.trim() == ""){
     document.getElementById("firstNameerror").innerHTML = "Enter your first name";}
@@ -25,7 +38,8 @@ else{
       console.log(firstName);
     }
   
-   //for LAST NAME
+  
+  //for LAST NAME
   if (lastName.trim() == "" || !lastName.match(alphNumericRegex)) {
     document.getElementById("lastNameerror").innerHTML =
       "Enter your Last name in alphanumeric form and no special character";
@@ -142,7 +156,10 @@ else{
       pass: password
     }),
     headers: { 'content-type': 'application/json' }
-  }).then(response => response.json()).then(data => data).catch(error => error)
+  }).then(response => response.json()).then(data => data).catch(error => error);
+
+
+  
   window.location.href = "./table.html";
   }
 });
