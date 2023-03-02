@@ -9,13 +9,19 @@ html,body{
 }
 body{
     background: #07787c;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form-container{
-    background-color: rgb(128, 185, 231);
+    /* justify-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; */
+    background-color: rgb(248, 252, 252);
    color: black;
    border-radius: 5%;
-   border: none;
+   border: 1px solid black;
    max-width: 500px;
    padding: 30px;
    width: 100%;
@@ -23,7 +29,11 @@ body{
    
 
 }
-
+/* .formCenter{
+    margin: auto;
+    width: 40%;
+   
+} */
 #submit{
     background-color: rgb(12, 168, 216);
     border-radius: 10px;
@@ -32,8 +42,6 @@ body{
     width: 100px;
     height: 30px;
     margin-top: 20px;
-    border: none;
-    
  
 }
 .error{
@@ -45,20 +53,4 @@ input{
  }
 .form input:focus{
     outline: 0;
- }
- input{
-    height: 30px;
-outline: 0;
- }
- .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
- }
-.btnClass{
-    display: flex;
-    align-items:center;
-    justify-content:end;
  }

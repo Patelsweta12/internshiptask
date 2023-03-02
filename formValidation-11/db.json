@@ -19,33 +19,43 @@
   "table": [
     {
       "fname": "sweta",
-      "lname": "",
-      "pEmail": "",
-      "oEmail": "",
-      "phone": "",
-      "salary": "",
-      "pass": "",
+      "lname": "patel",
+      "pEmail": "swetapatel11114@gmail.com",
+      "oEmail": "swetapatel11114@1rivet.com",
+      "phone": "1234567891",
+      "salary": "60000",
+      "pass": "Sweta@1223dfdsf",
       "id": 1
     },
     {
-      "fname": "dsfbsjdfj",
-      "lname": "",
-      "pEmail": "",
-      "oEmail": "",
-      "phone": "",
-      "salary": "",
-      "pass": "",
+      "fname": "pallll",
+      "lname": "patel",
+      "pEmail": "swetapatel11114@gmail.com",
+      "oEmail": "swetapatel11114@1rivet.com",
+      "phone": "1234567891",
+      "salary": "60000",
+      "pass": "ASweeta@123dd",
       "id": 2
     },
     {
-      "fname": "fdsa",
-      "lname": "",
-      "pEmail": "",
-      "oEmail": "",
-      "phone": "",
-      "salary": "",
-      "pass": "",
+      "fname": "maaaahiii",
+      "lname": "patel",
+      "pEmail": "swetapatel11114@gmail.com",
+      "oEmail": "swetapatel11114@1rivet.com",
+      "phone": "1234567891",
+      "salary": "60000",
+      "pass": "Sweta@12232ff",
       "id": 3
+    },
+    {
+      "fname": "haika",
+      "lname": "patel",
+      "pEmail": "swetapatel11114@gmail.com",
+      "oEmail": "swetapatel11114@1rivet.com",
+      "phone": "1234567891",
+      "salary": "60000",
+      "pass": "Sweta@123fdsd",
+      "id": 4
     },
     {
       "fname": "sweta",
@@ -54,8 +64,18 @@
       "oEmail": "swetapatel11114@1rivet.com",
       "phone": "1234567891",
       "salary": "60000",
-      "pass": "Sweta@12fdfd",
-      "id": 4
+      "pass": "Sweta@123fdsfsd",
+      "id": 5
+    },
+    {
+      "fname": "swetaaaddasdadad",
+      "lname": "patelasdasdad",
+      "pEmail": "swetapatel11114@gmail.com",
+      "oEmail": "swetapatel11114@1rivet.com",
+      "phone": "1234567891",
+      "salary": "60000",
+      "pass": "sweta@12Sfsf",
+      "id": 6
     }
   ]
 }

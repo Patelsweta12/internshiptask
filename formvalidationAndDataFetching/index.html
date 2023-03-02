@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="formCenter">
+      <form class="form-container">
+        <h1>Register Yourself</h1>
+        <br />
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          onkeyup="validateFirstName()"
+          onclick="validateFirstName()"
+          onchange="validateFirstName()"
+        /><br />
+        <p class="error" id="firstNameerror"></p>
+        <br />
+
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          onkeyup="validateLastName()"
+          onclick="validateLastName()"
+          onchange="validateLastName()"
+        /><br />
+        <p class="error" id="lastNameerror"></p>
+        <br />
+
+        <label for="email"> Personal Email:</label>
+        <input
+          type="email"
+          id="pEmail"
+          name="email"
+          onkeyup="validatePersonalEmail()"
+          onclick="validatePersonalEmail()"
+          onchange="validatePersonalEmail()"
+        /><br />
+        <p class="error" id="personalEmailerror"></p>
+        <br />
+
+        <label for="email"> Organization Email:</label>
+        <input
+          type=""
+          id="oEmail"
+          name="email"
+          onkeyup="validateOrgEmail()"
+          onclick="validateOrgEmail()"
+          onchange="validateOrgEmail()"
+        /><br />
+        <p class="error" id="orgEmailerror"></p>
+        <br />
+
+        <label for="password"> Password :</label>
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          onkeyup="ValidatePassword()"
+          onclick="ValidatePassword()"
+          onchange="ValidatePassword()"
+        /><br />
+        <p class="error" id="passworderror"></p>
+        <br />
+
+        <label for="phone"> Phone number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          onkeyup="validatePhoneNumber()"
+          onclick="validatePhoneNumber()"
+          onchange="validatePhoneNumber()"
+        /><br />
+        <p class="error" id="phoneerror"></p>
+        <br />
+
+        <label for="salary">Salary:</label>
+        <input
+          type="text"
+          id="salary"
+          name="salary"
+          onkeyup="validateSalary()"
+          onclick="validateSalary()"
+          onchange="validateSalary()"
+        /><br />
+        <p class="error" id="salaryerror"></p>
+        <br />
+
+        <button type="submit" value="Submit" id="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form-Validation</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> -->
   </head>
 
   <body>
-    <div class="formCenter">
-      <form action="welcome.html" class="form-container">
+    <div class="wrapper">
+    <div>
+      <form  class="form-container">
       
         <h1>Register Yourself</h1><br />
         <label for="fname">First name:</label>
@@ -42,12 +42,13 @@
         <input type="text" id="salary" name="salary" /><br />
         <p class="error" id="salaryerror"></p><br />
 
-
+<div class="btnClass">
         <button type="submit" value="Submit" id="submit">Submit</button>
-    
+      </div>
       </form>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+    <script src="validation.js"></script>
   </body>
 </html>

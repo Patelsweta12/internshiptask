@@ -1,8 +1,6 @@
 let submitButton = document.getElementById("submit");
 submitButton.addEventListener("click", (e) => {
-
-
-  e.preventDefault();
+e.preventDefault();
   let firstName = document.getElementById("fname").value;
   let lastName = document.getElementById("lname").value;
   let personalEmail = document.getElementById("pEmail").value;
@@ -10,44 +8,24 @@ submitButton.addEventListener("click", (e) => {
   let phoneNumber = document.getElementById("phone").value;
   let salary = document.getElementById("salary").value;
   let password = document.getElementById("pass").value;
-
-  //   for FRIST NAME
-  // let takeFname = document.getElementById("fname");
-  // takeFname.addEventListener("keyup",()=>{
-  //   var alphNumericRegex = /^[0-9a-zA-Z]+$/;
-  //   if (firstName.trim() == "" || !firstName.match(alphNumericRegex)) {
-  //     document.getElementById("firstNameerror").innerHTML = "Enter your first name in alphanumeric form and no special character";
-  //     // let inputColor = document.getElementById("fname");
-  //     takeFname.style.border = "1px solid red";
-  //   }
-  //   else {
-  //     takeFname.style.border = "8px solid green";
-  //     // let inputColor = document.getElementById("fname");
-  
-  //     document.getElementById("firstNameerror").innerHTML = "";
-  //     console.log(firstName);
-  //   }
-    
-  // })
-  
-    
-
-
+//for FIRST NAME
   var alphNumericRegex = /^[0-9a-zA-Z]+$/;
-  if (firstName.trim() == "" || !firstName.match(alphNumericRegex)) {
-    document.getElementById("firstNameerror").innerHTML = "Enter your first name in alphanumeric form and no special character";
-    let inputColor = document.getElementById("fname");
-    inputColor.style.border = "1px solid red";
-  }
-  else {
-    let inputColor = document.getElementById("fname");
-    inputColor.style.border = "1px solid green";
+  if (firstName.trim() == ""){
+    document.getElementById("firstNameerror").innerHTML = "Enter your first name";}
+ else if (!firstName.match(alphNumericRegex)) {
+  document.getElementById("firstNameerror").innerHTML = "Enter your first name in alphanumeric form and no special character";
+  let inputColor = document.getElementById("fname");
+      inputColor.style.border = "1px solid red";}
 
-    document.getElementById("firstNameerror").innerHTML = "";
-    console.log(firstName);
-  }
-
-  //for LAST NAME
+else{
+      let inputColor = document.getElementById("fname");
+      inputColor.style.border = "1px solid green";
+  
+      document.getElementById("firstNameerror").innerHTML = "";
+      console.log(firstName);
+    }
+  
+   //for LAST NAME
   if (lastName.trim() == "" || !lastName.match(alphNumericRegex)) {
     document.getElementById("lastNameerror").innerHTML =
       "Enter your Last name in alphanumeric form and no special character";
@@ -152,6 +130,7 @@ submitButton.addEventListener("click", (e) => {
 
   if (firstNameerror.innerHTML=="" && lastNameerror.innerHTML == "" && personalEmailerror.innerHTML =="" && orgEmailerror.innerHTML=="" && phoneerror.innerHTML == "" && salaryerror.innerHTML =="" && passworderror.innerHTML == ""  ) {
     fetch("http://localhost:3000/table", {
+
     method: "POST",
     body: JSON.stringify({
       fname: firstName,
@@ -164,6 +143,7 @@ submitButton.addEventListener("click", (e) => {
     }),
     headers: { 'content-type': 'application/json' }
   }).then(response => response.json()).then(data => data).catch(error => error)
+  window.location.href = "./table.html";
   }
 });
 
