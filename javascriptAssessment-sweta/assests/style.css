@@ -144,6 +144,9 @@ tr:nth-child(even) {
     justify-content:space-between;
     flex-direction: row;
 }
+.compulsory{
+    color: red;
+}
 
 .formFields {
     flex-direction: column;
