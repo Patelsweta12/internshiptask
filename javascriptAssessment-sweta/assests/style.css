@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    background-color: rgba(235, 240, 250, 0.63);
+    background-color: white;
 }
 
 .error {
@@ -50,7 +50,7 @@ margin-left: 20px;
 }
 
 tr:nth-child(even) {
-    background-color: white;
+    background-color: rgba(235, 240, 250, 0.63);
 
 }
 
@@ -132,6 +132,7 @@ tr:nth-child(even) {
 }
 .display{
     display: block;
+    margin-bottom: 9px;
 }
 
 .statusAndAddBtn {
