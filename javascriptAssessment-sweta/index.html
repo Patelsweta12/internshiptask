@@ -12,8 +12,13 @@
 <body>
     <section class="formSection">
         <div class="upper-part">
+        
             <div class="statusAndAddBtn">
-                <button class="statusBtnProp cursor-pointer ">Status</button>
+              
+                <button class="f-btn cursor-pointer statusBtnProp">
+                    <img src="assests/img/status-icon.svg" alt="status">
+                    <span>Status</span>
+                </button>
                 <button class="addBtn-color cursor-pointer ">Add Customer</button>
 
             </div>
@@ -24,17 +29,17 @@
                 <div class="d-flex formFields">
                     <div class="d-flex upper-fields">
                         <div>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" class="inputClass" /><br />
+                            <label for="name" class="display">Name:</label>
+                            <input type="text" id="name" name="name" class="inputClass"  placeholder="Enter Name"/><br />
                             <p class="error" id="nameerror"></p><br />
                         </div>
                         <div>
-                            <label for="description">Description:</label>
-                            <input type="text" id="description" name="description" class="inputClass" /><br />
+                            <label for="description" class="display">Description:</label>
+                            <input type="text" id="description" name="description" class="inputClass"  placeholder="Enter Description"/><br />
                             <p class="error" id="descriptionError"></p><br />
                         </div>
                         <div>
-                            <label for="status"> Status</label>
+                            <label for="status" class="display"> Status:</label>
                             <select name="select" id="selectStatus" class="inputClass">
                                 <option value="status">Status</option>
                                 <option value="open">Open</option>
@@ -48,18 +53,18 @@
 
                     <div class="d-flex ">
                         <div>
-                            <label for="rate"> Rate</label>
-                            <input type="number" id="rate" name="rate" class="inputClass" /><br />
+                            <label for="rate" class="display"> Rate:</label>
+                            <input type="number" id="rate" name="rate" class="inputClass" placeholder="Enter Rate"/><br />
                             <p class="error" id="rateEerror"></p><br />
                         </div>
                         <div>
-                            <label for="balance"> Balance</label>
-                            <input type="number" id="balance" name="balance" class="inputClass" /><br />
+                            <label for="balance" class="display"> Balance:</label>
+                            <input type="number" id="balance" name="balance" class="inputClass"  placeholder="Enter Balance"/><br />
                             <p class="error" id="balanceError"></p><br />
                         </div>
                         <div>
-                            <label for="deposite"> Deposite</label>
-                            <input type="number" id="deposite" name="deposite" class="inputClass" /><br />
+                            <label for="deposite" class="display"> Deposite:</label>
+                            <input type="number" id="deposite" name="deposite" class="inputClass" placeholder="Enter Deposit"/><br />
                             <p class="error" id="depositeError"></p><br />
                         </div>
                     </div>

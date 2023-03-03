@@ -131,7 +131,7 @@ let table = document.createElement("table");
 console.log(table);
 table.classList.add("table-width"); // for style
 
-let headers = [{ header: "ID", key: "id" }, { header: "NAME", key: "name" }, { header: "DESCRIPTION", key: "description" }, { header: "STATUS", key: "selectStatus" },
+let headers = [{ header: "#", key: "id" }, { header: "NAME", key: "name" }, { header: "DESCRIPTION", key: "description" }, { header: "STATUS", key: "selectStatus" },
 { header: "RATE", key: "rate" }, { header: "BALANCE ", key: "balance" },
 { header: "DEPOSITE ", key: "deposite" }];
 

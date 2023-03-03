@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "table": [
+    {
+      "name": "harsh2121`2",
+      "description": "fsdfsdf",
+      "selectStatus": "error",
+      "rate": "345435",
+      "balance": "35345345",
+      "deposite": "3534534",
+      "id": 1
+    },
+    {
+      "name": "sweeeetaaaa",
+      "description": "fsdf434",
+      "selectStatus": "success",
+      "rate": "4234234",
+      "balance": "4234324",
+      "deposite": "3423423",
+      "id": 2
+    },
+    {
+      "name": "fsdfsdf",
+      "description": "45345345",
+      "selectStatus": "success",
+      "rate": "54354353",
+      "balance": "3453453",
+      "deposite": "435345",
+      "id": 3
+    },
+    {
+      "name": "adasdasd",
+      "description": "ewretert45435",
+      "selectStatus": "error",
+      "rate": "5435345",
+      "balance": "535345",
+      "deposite": "34534535",
+      "id": 4
+    }
+  ]
+}
