@@ -141,7 +141,7 @@ tr:nth-child(even) {
 
 .d-flex {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     flex-direction: row;
 }
 
