@@ -1,0 +1,65 @@
+<h3> {{title}}</h3>
+
+<table [class.tableClass]="myclass">
+    <!-- single class -->
+    <thead>
+        <tr [class.rowColor]="myclass">
+            <td [attr.colspan]="myattr" [class.fontBold]="myclass">Student Information</td>
+        </tr>
+        <tr>
+            <th [class.tableStyle]="myclass"> Id</th>
+            <th [class.tableStyle]="myclass">Name</th>
+            <th [class.tableStyle]="myclass">Age</th>
+            <th [class.tableStyle]="myclass">Address</th>
+            <th [class.tableStyle]="myclass">Technolpgy</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr [class.rowColor]="myclass">
+            <td [class.tableStyle]="myclass">1</td>
+            <td [class.tableStyle]="myclass">Sweta</td>
+            <td [class.tableStyle]="myclass">22</td>
+            <td [class.tableStyle]="myclass">Valsad</td>
+            <td [class.tableStyle]="myclass">Frontend</td>
+        </tr>
+        <tr [class.rowColor]="myclass">
+            <td [class.tableStyle]="myclass">2</td>
+            <td [class.tableStyle]="myclass">Harsh</td>
+            <td [class.tableStyle]="myclass">19</td>
+            <td [class.tableStyle]="myclass">Surat</td>
+            <td [class.tableStyle]="myclass">.net</td>
+        </tr>
+        <tr [class.rowColor]="myclass">
+            <td [class.tableStyle]="myclass">3</td>
+            <td [class.tableStyle]="myclass">Namrata</td>
+            <td [class.tableStyle]="myclass">26</td>
+            <td [class.tableStyle]="myclass">vapi</td>
+            <td [class.tableStyle]="myclass">QA</td>
+        </tr>
+    </tbody>
+
+</table>
+<br><br>
+<!-- without interface -->
+<form>
+    <label for="fname" >First name:</label><br>
+    <input type="text" name="name" [(ngModel)]= "fname"><br>
+  </form> 
+  <h3 > {{fname}}</h3>
+
+  <br><br><br>
+  <form action="#">
+    <label for="fname" >First name:</label><br>
+    <input type="text"  [(ngModel)]= "getData.fname" id="fname" name="name"><br><br>
+
+
+    <label for="age" >Age:</label><br>
+    <input type="number"  [(ngModel)]= "getData.age" id="age" name="age" ><br><br>
+
+
+    <label for="add" >Address:</label><br>
+    <input type="text"  [(ngModel)]= "getData.add" id="add" name="add" ><br><br>
+
+    
+    <button type="submit" (click)="addData()">Add Data</button>
+  </form>
