@@ -1,0 +1,77 @@
+<h2>{{title}}</h2>
+
+<!-- table starts -->
+<table [class.tableClass]="myclass">
+  <thead>
+    <tr *ngFor="let data of  headerArr">
+      <th [class.tableStyle]="myclass">{{data.id}}</th>
+      <th [class.tableStyle]="myclass">{{data.name}}</th>
+      <th [class.tableStyle]="myclass">{{data.email}}</th>
+      <th [class.tableStyle]="myclass">{{data.age}}</th>
+      <th [class.tableStyle]="myclass">{{data.button}}</th>
+    </tr>
+
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of studentArray">
+      <td [class.tableStyle]="myclass">{{data.id}}</td>
+      <td [class.tableStyle]="myclass">{{data.name}}</td>
+      <td [class.tableStyle]="myclass">{{data.email}}</td>
+      <td [class.tableStyle]="myclass">{{data.age}}</td>
+      <td *ngIf='data.enableDisable' [class.tableStyle]="myclass" ><button>click me</button></td>
+      <!-- <td *ngIf="this.isButtonVisible" (click)="this.isButtonVisible = false"><button>click me</button></td> -->
+    </tr>
+  </tbody>
+</table>
+<!-- table ends -->
+
+<p>Select your favorite Day:</p>
+<!-- <div *ngFor="let day of weekdayarr"  (change)="getDayValue($event)">
+  <input type="radio">{{day}}
+</div> -->
+<div class="container"  (change)="getDayValue($event)">
+<input type="radio" name="day" value="sunday">
+<label for="sunday">Sunday</label>
+
+<input type="radio" name="day" value="monday">
+<label for="monday">Monday</label>
+
+<input type="radio" name="day" value="tuesday">
+<label for="tuesday">Tuesday</label>
+
+<input type="radio" name="day" value="wednesday">
+<label for="wednesday">wednesday</label>
+
+<input type="radio" name="day" value="thursday">
+<label for="thursday">Thursday</label>
+
+<input type="radio" name="day" value="friday">
+<label for="friday">Friday</label>
+
+<input type="radio" name="day" value="saturday">
+<label for="saturday">Saturday</label>
+</div>
+<br><br><br>
+<div   [ngSwitch]="selectedDay">
+  <h2 *ngSwitchCase="'sunday'">Oh! the happy day</h2>
+  <h2 *ngSwitchCase="'monday'">let's take MAHADEV's blessing</h2>
+  <h2 *ngSwitchCase="'tuesday'">Bappa Moriya!</h2>
+  <h2 *ngSwitchCase="'wednesday'">Let's help others and make a happy day</h2>
+  <h2 *ngSwitchCase="'thursday'"> You won't have this Thursday again, so make it a good one</h2>
+  <h2 *ngSwitchCase="'friday'">Friday afternoon feels like vaction.</h2>
+  <h2 *ngSwitchCase="'saturday'">Saturdays bring happiness</h2>
+ 
+</div>
+
+<!-- for days array --> 
+<br><br><br><br>
+
+
+<!-- <p [ngStyle]="{'color':'red','font-weight': 'bold'}"> hello Good Morning</p> -->
+<p [ngClass]="myClass? 'text-style': 'normal'"> hello good morning all</p>
+<button (click)="myClass=!myClass">hey</button>
+
+
+ <p [ngStyle]="myStyle()">lets add style</p>
+ <button (click)="myStyle()">hey</button>
