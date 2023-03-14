@@ -15,3 +15,17 @@
     font-weight: 500;
     color: red;
 }
+.itsMeColorClass{
+
+  color: green;
+
+  border: 3px solid brown;
+  
+}
+.itsMeFontClass{
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.itsMeFont{
+  font-style: italic;
+}

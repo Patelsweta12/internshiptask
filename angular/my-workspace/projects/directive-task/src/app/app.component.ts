@@ -30,13 +30,28 @@ getDayValue(val: any): void{
 }
 public myClass:boolean=true
 
-myStyle(){
+listOfClassses={
+  itsMeColorClass:true,
+  itsMeFontClass:true,
+  itsMeFont:true
+};
+addStyle(){
+  this.listOfClassses.itsMeColorClass=!this.listOfClassses.itsMeColorClass;
+  this.listOfClassses.itsMeFontClass=!this.listOfClassses.itsMeFontClass;
+  this.listOfClassses.itsMeFont=!this.listOfClassses.itsMeFont;
+};
+ onbtnClick:boolean=true
+myStyle1(){
   return{
-   ' background-color': 'red',
-   'color':'green',
-   'font-weight': 'bold'
+    'color': 'red',
+    'font-family': 'Times New Roman',
+ 'font-style': 'italic'
   }
+  
 }
-
-
+myStyle2(){
+  return{
+    'color': 'green',
+  }
+  }
 }

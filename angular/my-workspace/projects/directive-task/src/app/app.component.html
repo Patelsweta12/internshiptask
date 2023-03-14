@@ -64,14 +64,21 @@
  
 </div>
 
-<!-- for days array --> 
+
 <br><br><br><br>
 
 
 <!-- <p [ngStyle]="{'color':'red','font-weight': 'bold'}"> hello Good Morning</p> -->
-<p [ngClass]="myClass? 'text-style': 'normal'"> hello good morning all</p>
+
+
+<!-- ngclass using ternary operator -->
+<p [ngClass]="myClass? 'text-style': 'normal'"> hello good morning all</p> 
 <button (click)="myClass=!myClass">hey</button>
 
+<!-- ng class using method -->
+<p [ngClass]="listOfClassses">It's Me,what about you</p>
+<button (click)="addStyle()">click for changes</button>
 
- <p [ngStyle]="myStyle()">lets add style</p>
- <button (click)="myStyle()">hey</button>
+ <p [ngStyle]="onbtnClick?myStyle1():myStyle2()">lets add style</p>
+ <button (click)="onbtnClick=!onbtnClick">style me</button>
+
